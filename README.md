@@ -10,6 +10,20 @@
     the code is easier to debug and it's more concise. 
   
     ** How do newcomers learn functinal programming?
+    
+   We Love Lazy Languages
+   ____________________________________________
+    Haskell is lazy. To illustrate this concept, consider the following puesdo code below: 
+    if(a & b) 
+    {
+       // do something...
+       
+     } 
+    Similar to C++ or Java, Haskell will execute the code within the block if and only if 'a' and 'b' are true. 
+    So if 'a' and 'b' are true, "do something". 
+    However, if 'a' is false, we immediately know that the condition is not true. There is no need to 
+    evaluate/execute "do something". 
+    
   
    Useful Tips in Haskell 
    ____________________________________________
@@ -25,7 +39,7 @@
   
   
    
-   The Trials of Haskell 
+   No Hassle Haskell 
    ____________________________________________
    **   What are, in your opinion, the major stumbling blocks in learning Haskell?
     It is an indisputable fact (at least in my book) that Haskell can be a pain...at first. 
