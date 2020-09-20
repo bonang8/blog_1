@@ -50,4 +50,24 @@
     to imperative OOP style programming crossfires with Haskell. You can say it's more to my style (no pun intended). 
     Second, Haskell is considered 
    
- 
+
+~ Haskell Activites | Recursion in Functional Programming  ~ 
+   
+  Recursion is Your Bestfriend 
+  ____________________________________________
+    I found a few interesting features about Haskell while completing the following activity: 
+     Implement the following functions in Haskell 
+       select_evens
+       select_odds
+       member
+       append
+       revert
+       less_equal
+
+     
+
+
+
+
+
+
