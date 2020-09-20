@@ -23,8 +23,9 @@
    How does Haskell compare to your favourite programming language? Give examples of the same algorithm written in your favourite language and in Haskell. 
    What are the respectives strengths and weaknesses of the two programming paradigms?
   
+  
    
-   The trials of Haskell 
+   The Trials of Haskell 
    ____________________________________________
    **   What are, in your opinion, the major stumbling blocks in learning Haskell?
     It is an indisputable fact (at least in my book) that Haskell can be a pain...at first. 
