@@ -55,6 +55,7 @@
    
   Recursion is Your Bestfriend 
   ____________________________________________
+  In Haskell, recursion is your bestfriend. 
     I found a few interesting features about Haskell while completing the following activity: 
      Implement the following functions in Haskell 
        select_evens
@@ -63,11 +64,39 @@
        append
        revert
        less_equal
+   
+   
+     --select_evens :: [Int] -> [Int]
+      select_evens [] = []
+      select_evens (x:xs) = if x `mod` 2 == 0 then x:select_evens xs else select_evens xs
+      -- extra exercise for even and odd
 
-     
+      -- point: is to check if the member exists in the list 
+      member m [] = False 
+      member m (x:xs) = if m == x then True else member m xs
+      -- point: append two lists together 
+      append [][] = []
+      append (x:xs)(y:ys) = x:xs ++ y:ys
+      -- point: to reverse the lists
+      -- concatenate the head 
+      revert[] = [] 
+      revert(x:xs) = revert xs ++ [x]
+      -- point: the less equal function compares each element from each lists and checks if the first is less than or equal to the other 
+      -- only returns true if all the elements from list 1 are less than or equal to the second list 
+      less_equal [] [] = True 
+      less_equal (x:xs)(y:ys) = if x > y then False else less_equal xs ys
+   
 
 
-
+   Peano not Piano 
+   ____________________________________________
+   Yes, I did mix up piano and Peano when I first heard of Peano arithmetic. In my defense, I wasn't the only one. 
+   What's the significance of Peano arithmetic? 
+   When I first applied Peano-Dedekind axioms for arithmetic in Haskell, I found that Haskell's type system is central to the language. 
+   Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
+   Let's examine a few examples: 
+   
+   
 
 
 
