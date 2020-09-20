@@ -135,10 +135,6 @@
           this is equal to S(S(S(O))) = 3 
 
           
-                
-    
-       
-**TODO: EDIT AND EXPLAIN 
 -- multiplication
 -- for the third line--> lets say we have two natural numbers 5 and 3--> we would have to add 5 three times therefore we call the addition function  
 -- mult (S (S O)) (S (S ( S O)))
