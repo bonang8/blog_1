@@ -1,6 +1,10 @@
 # blog_1
 ~ Introduction: Haskell in a Blog ~  
-
+  References: 
+   uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php 
+   Learn You a Haskell: http://learnyouahaskell.com/introduction
+   Hutton: Programming in Haskell by Hutton Graham.   
+  
    Haskell's Got Style 
    ____________________________________________
     ** Functional Programming 
@@ -9,7 +13,7 @@
     To put simply, functions can be used as arguments. How does functional programming benefit us?
     Given Haskell's ability to treat functions as values, the code is easier to debug and it's more concise. 
     Furthermore, it prevents side effects. Meaning, it makes it hard to analyze your program for correctness. 
-    Haskell can gaurentee that functions have no side effects, making it easier to prove the Haskell program 
+    Haskell can gaurentee that function(s) has no side effects, making it easier to prove that the Haskell program 
     is correct. 
     
     ** How do newcomers learn functinal programming?
@@ -54,7 +58,7 @@
    
 
 ~ Haskell Activites | Recursion in Functional Programming  ~ 
-   
+  **TODO: WILL EDIT AND EXPLAIN 
   Recursion is Your Bestfriend 
   ____________________________________________
   In Haskell, recursion is your bestfriend. 
@@ -96,21 +100,45 @@
    What's the significance of Peano arithmetic? 
    When I first applied Peano-Dedekind axioms for arithmetic in Haskell, I found that Haskell's type system is central to the language. 
    Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
-   Let's examine a few examples: 
-   
-   **EXAMPLE_1: ADDITION 
-   Peano-Dedekind axiom postulates that: 
+   Here's a quick review of Peano: 
+    **Peano-Dedekind axiom postulates that(ref: Chicago.edu): 
      0 is a natural number 
+     0 is not a successor 
+     s is a one-one function from the natural numbers to natural numbers(NN), i.e. for all NN a, s(a) is also a NN, moreover, 
+     for all NN a and b, if s(a) = s(b) then a = b 
+     every NN is either 0 or a successor i.e., for all a, a = 0 or there exists b such that a = s(b). 
      
-   -- numbers
-data NN = O | S NN
-  Data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN) data type as being    0 or a successor to NN. 
-   deriving (Eq,Show)
--- addition
-add :: NN -> NN -> NN
-add O n = n
-add (S n) m = S (add n m)
--- add (S O) (S (S O))
+   **Let's examine a few examples: 
+     EXAMPLE_1: ADDITION 
+      -- data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       -- data type as being  0 or a successor to NN. 
+     data NN = O | S NN
+      -- The statement below simply allows us to display our result in the console. 
+       deriving (Eq,Show)
+      -- The function add takes in 2 arguments and outputs one result. As stated before, NN stands for a natural number 
+       add :: NN -> NN -> NN
+      -- It's simply saying the any number (n) plus O is itself. 
+      -- Like I said earlier, we are using peano numbers. In this case, 0 is defined as 'O'. 
+       add O n = n
+       add (S n) m = S (add n m)
+      -- Write this for the input in the command line. 
+      -- add (S O) (S (S O))
+
+   **Whats going on in the last two lines? 
+     If we were to input: add (S O) (S (S O)), we know that anything plus 'O' is itself. 
+     Given add(S O) (S(S O)), 
+        add(S O) = S
+     Result: 
+        Thus the output will be: 
+          S(S(S(O))) 
+        If we were to view this from a numeric system, 
+          add(S O) (S(S O)) would be viewed as 1 + 2 
+          this is equal to S(S(S(O))) = 3 
+
+          
+                
+    
+       
+**TODO: EDIT AND EXPLAIN 
 -- multiplication
 -- for the third line--> lets say we have two natural numbers 5 and 3--> we would have to add 5 three times therefore we call the addition function  
 -- mult (S (S O)) (S (S ( S O)))
