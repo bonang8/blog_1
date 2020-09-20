@@ -8,7 +8,10 @@
     in which the basic method of computation is the application of functions to arguments(p.4). 
     To put simply, functions can be used as arguments. How does functional programming benefit us?
     Given Haskell's ability to treat functions as values, the code is easier to debug and it's more concise. 
-  
+    Furthermore, it prevents side effects. Meaning, it makes it hard to analyze your program for correctness. 
+    Haskell can gaurentee that functions have no side effects, making it easier to prove the Haskell program 
+    is correct. 
+    
     ** How do newcomers learn functinal programming?
     
    We Love Lazy Languages
@@ -19,11 +22,10 @@
        // do something...
        
      } 
-    Similar to C++ or Java, Haskell will execute the code within the block if and only if 'a' and 'b' are true. 
-    So if 'a' and 'b' are true, "do something". 
-    However, if 'a' is false, we immediately know that the condition is not true. There is no need to 
-    evaluate/execute "do something". 
-    
+    Similar to C++ and Java, Haskell will execute the code within the block if and only if 'a' and 'b' are true. 
+    In short, if 'a' and 'b' are true, "do something." However, if 'a' is false, we immediately know that the 
+    condition is not true. There is no need to evaluate/execute "do something." Better yet, we don't need to 
+    evaluate 'b'- saving us time. Laziness pays off (in this sense). 
   
    Useful Tips in Haskell 
    ____________________________________________
@@ -96,6 +98,48 @@
    Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
    Let's examine a few examples: 
    
+   **EXAMPLE_1: ADDITION 
+   Peano-Dedekind axiom postulates that: 
+     0 is a natural number 
+     
+   -- numbers
+data NN = O | S NN
+  Data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN) data type as being    0 or a successor to NN. 
+   deriving (Eq,Show)
+-- addition
+add :: NN -> NN -> NN
+add O n = n
+add (S n) m = S (add n m)
+-- add (S O) (S (S O))
+-- multiplication
+-- for the third line--> lets say we have two natural numbers 5 and 3--> we would have to add 5 three times therefore we call the addition function  
+-- mult (S (S O)) (S (S ( S O)))
+mult :: NN -> NN -> NN
+mult O n = O 
+mult (S n) m = add m (mult n m) 
+-- subtr 
+subtr :: NN -> NN -> NN 
+subtr n O = n 
+subtr O m = O 
+subtr (S (n)) (S (m)) = subtr n m
+{- 
+(S (S O)) - (S O)  2-1
+n = S O     m = O
+S O - O     base case 
+S O
+-}
+-- a language for arithmetic expressions
+data Exp = Num Int | Plus Exp Exp | Times Exp Exp
+
+eval :: Exp -> NN
+eval (Num 0) = O
+eval (Num n) = S (eval (Num (n-1)))
+eval (Plus n m) = add (eval n) (eval m)
+eval (Times n m) = mult (eval n) (eval m)
+-- eval (Times (Num 2) (Num 3))
+-- eval (Plus (Num 1) (Times (Num 2) (Num 3)))
+-- data PN = I | T PN
+
    
 
 
