@@ -7,7 +7,7 @@
   
    **Haskell's Got Style** 
    ____________________________________________
-     _emphasized_Functional Programming 
+     _Functional Programming_ 
      
     Haskell is a purely functional programming language. Functional programming is a style of programming 
     in which the basic method of computation is the application of functions to arguments(p.4). 
@@ -34,8 +34,7 @@
   
    **Useful Tips in Haskell** 
    ____________________________________________
-    _emphasized_Which external sources (videos, blogs, tutorials, etc) do you find most useful?
-    
+    _Which external sources (videos, blogs, tutorials, etc) do you find most useful?_
     Top two must read resources are: 
       1. Learn you a Haskell for Great Good 
       2. Programming in Haskell. 
@@ -50,8 +49,7 @@
    
    **No Hassle Haskell** 
    ____________________________________________
-    _emphasized_What are, in your opinion, the major stumbling blocks in learning Haskell?
-    
+    _What are, in your opinion, the major stumbling blocks in learning Haskell?_
     It is an indisputable fact (at least in my book) that Haskell can be a pain...at first. 
     The shift from a C++ background to Java and Python was not as troublesome from my transition to Haskell. 
     However, for those who did not struggle, congratulations! To start, Haskell is different from any programming
