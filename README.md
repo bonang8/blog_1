@@ -108,7 +108,7 @@
      every NN is either 0 or a successor i.e., for all a, a = 0 or there exists b such that a = s(b). 
      
    **Let's examine a few examples:** 
-    ____________________________________________
+   ____________________________________________
      _EXAMPLE_1: ADDITION_
        - data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       --              data type as being  0 or a successor to NN. 
       `data NN = O | S NN`
