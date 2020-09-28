@@ -110,11 +110,11 @@
    **Let's examine a few examples:** 
    ____________________________________________
      _EXAMPLE_1: ADDITION_
-       - data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       --              data type as being  0 or a successor to NN. 
+       - data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN).                    - data type as being  0 or a successor to NN. 
       `data NN = O | S NN`
        - The statement below simply allows us to display our result in the console. 
        `deriving (Eq,Show)`
-       - The function add takes in 2 arguments and outputs one result. As stated before, NN stands for a natural number 
+       - The function add takes in 2 arguments and outputs one result. As stated before, NN stands for a natural number. 
       `add :: NN -> NN -> NN`
        - It's simply saying the any number (n) plus O is itself. 
        - Like I said earlier, we are using peano numbers. In this case, 0 is defined as 'O'. 
