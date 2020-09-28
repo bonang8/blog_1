@@ -5,7 +5,7 @@
    Learn You a Haskell: http://learnyouahaskell.com/introduction
    Hutton: Programming in Haskell by Hutton Graham.   
   
-   Haskell's Got Style 
+   **Haskell's Got Style** 
    ____________________________________________
     ** Functional Programming 
     Haskell is a purely functional programming language. Functional programming is a style of programming 
@@ -18,7 +18,7 @@
     
     ** How do newcomers learn functinal programming?
     
-   We Love Lazy Languages
+   **We Love Lazy Languages**
    ____________________________________________
     Haskell is lazy. To illustrate this concept, consider the following puesdo code below: 
     if(a & b) 
@@ -31,7 +31,7 @@
     condition is not true. There is no need to evaluate/execute "do something." Better yet, we don't need to 
     evaluate 'b'- saving us time. Laziness pays off (in this sense). 
   
-   Useful Tips in Haskell 
+   **Useful Tips in Haskell** 
    ____________________________________________
    ** Which external sources (videos, blogs, tutorials, etc) do you find most useful?
    Top two must read resources are: 
@@ -58,8 +58,8 @@
    
 
 ~ Haskell Activites | Recursion in Functional Programming  ~ 
-  **TODO: WILL EDIT AND EXPLAIN 
-  Recursion is Your Bestfriend 
+  **TODO: WILL EDIT AND EXPLAIN** 
+  **Recursion is Your Bestfriend**
   ____________________________________________
   In Haskell, recursion is your bestfriend. 
     I found a few interesting features about Haskell while completing the following activity: 
@@ -94,21 +94,21 @@
    
 
 
-   Peano not Piano 
+   **Peano not Piano** 
    ____________________________________________
    Yes, I did mix up piano and Peano when I first heard of Peano arithmetic. In my defense, I wasn't the only one. 
    What's the significance of Peano arithmetic? 
    When I first applied Peano-Dedekind axioms for arithmetic in Haskell, I found that Haskell's type system is central to the language. 
    Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
    Here's a quick review of Peano: 
-    **Peano-Dedekind axiom postulates that(ref: Chicago.edu): 
+    **Peano-Dedekind axiom postulates that(ref: Chicago.edu):** 
      0 is a natural number 
      0 is not a successor 
      s is a one-one function from the natural numbers to natural numbers(NN), i.e. for all NN a, s(a) is also a NN, moreover, 
      for all NN a and b, if s(a) = s(b) then a = b 
      every NN is either 0 or a successor i.e., for all a, a = 0 or there exists b such that a = s(b). 
      
-   Let's examine a few examples: 
+   **Let's examine a few examples:** 
      EXAMPLE_1: ADDITION 
       -- data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       -- data type as being  0 or a successor to NN. 
       data NN = O | S NN
@@ -123,7 +123,7 @@
       -- Write this for the input in the command line. 
       -- add (S O) (S (S O))
 
-   **Whats going on in the last two lines? 
+   **Whats going on in the last two lines?**
      If we were to input: add (S O) (S (S O)), we know that anything plus 'O' is itself. 
      Given add(S O) (S(S O)), 
         add(S O) = S
