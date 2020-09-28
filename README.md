@@ -33,16 +33,16 @@
   
    **Useful Tips in Haskell** 
    ____________________________________________
-   ** Which external sources (videos, blogs, tutorials, etc) do you find most useful?
-   Top two must read resources are: 
+    ** Which external sources (videos, blogs, tutorials, etc) do you find most useful?
+    Top two must read resources are: 
       1. Learn you a Haskell for Great Good 
       2. Programming in Haskell. 
-   Both illustrate ideas imperative to Haskell in the most simplest way. 
+    Both illustrate ideas imperative to Haskell in the most simplest way. 
    
    
    
-   How does Haskell compare to your favourite programming language? Give examples of the same algorithm written in your favourite language and in Haskell. 
-   What are the respectives strengths and weaknesses of the two programming paradigms?
+    How does Haskell compare to your favourite programming language? Give examples of the same algorithm written in your favourite language and in Haskell. 
+    What are the respectives strengths and weaknesses of the two programming paradigms?
   
   
    
