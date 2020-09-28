@@ -61,7 +61,7 @@
   **TODO: WILL EDIT AND EXPLAIN** 
   **Recursion is Your Bestfriend**
   ____________________________________________
-  In Haskell, recursion is your bestfriend. 
+   In Haskell, recursion is your bestfriend. 
     I found a few interesting features about Haskell while completing the following activity: 
      Implement the following functions in Haskell 
        select_evens
@@ -96,11 +96,11 @@
 
    **Peano not Piano** 
    ____________________________________________
-   Yes, I did mix up piano and Peano when I first heard of Peano arithmetic. In my defense, I wasn't the only one. 
-   What's the significance of Peano arithmetic? 
-   When I first applied Peano-Dedekind axioms for arithmetic in Haskell, I found that Haskell's type system is central to the language. 
-   Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
-   Here's a quick review of Peano: 
+    Yes, I did mix up piano and Peano when I first heard of Peano arithmetic. In my defense, I wasn't the only one. 
+    What's the significance of Peano arithmetic? 
+    When I first applied Peano-Dedekind axioms for arithmetic in Haskell, I found that Haskell's type system is central to the language. 
+    Peano arithmatic is the gateway to defining the most basic of arithmatic concepts that are recursively defined. 
+    Here's a quick review of Peano: 
     **Peano-Dedekind axiom postulates that(ref: Chicago.edu):** 
      0 is a natural number 
      0 is not a successor 
