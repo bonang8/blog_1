@@ -7,7 +7,7 @@
   
    **Haskell's Got Style** 
    ____________________________________________
-    ** Functional Programming 
+    Functional Programming 
     Haskell is a purely functional programming language. Functional programming is a style of programming 
     in which the basic method of computation is the application of functions to arguments(p.4). 
     To put simply, functions can be used as arguments. How does functional programming benefit us?
@@ -110,18 +110,18 @@
      
    **Let's examine a few examples:** 
      EXAMPLE_1: ADDITION 
-      -- data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       -- data type as being  0 or a successor to NN. 
-      data NN = O | S NN
+      -- data is a keyword in Haskell used to define a data type like a typedef in C or C++. What this line does is to define the natural numbers (NN)       --              data type as being  0 or a successor to NN. 
+      `data NN = O | S NN`
       -- The statement below simply allows us to display our result in the console. 
-       deriving (Eq,Show)
+       `deriving (Eq,Show)`
       -- The function add takes in 2 arguments and outputs one result. As stated before, NN stands for a natural number 
-      add :: NN -> NN -> NN
+      `add :: NN -> NN -> NN`
       -- It's simply saying the any number (n) plus O is itself. 
       -- Like I said earlier, we are using peano numbers. In this case, 0 is defined as 'O'. 
-      add O n = n
-      add (S n) m = S (add n m)
+      `add O n = n`
+      `add (S n) m = S (add n m)`
       -- Write this for the input in the command line. 
-      -- add (S O) (S (S O))
+      `add (S O) (S (S O))`
 
    **Whats going on in the last two lines?**
      If we were to input: add (S O) (S (S O)), we know that anything plus 'O' is itself. 
