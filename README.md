@@ -46,7 +46,7 @@
   
   
    
-   No Hassle Haskell 
+   **No Hassle Haskell** 
    ____________________________________________
    **   What are, in your opinion, the major stumbling blocks in learning Haskell?
     It is an indisputable fact (at least in my book) that Haskell can be a pain...at first. 
