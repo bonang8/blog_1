@@ -165,6 +165,29 @@ eval (Times n m) = mult (eval n) (eval m)
 -- data PN = I | T PN
 
    
-
+ **A Calculator in Haskell** 
+ ____________________________________________
+ What we'll cover: 
+      Addition 
+      Subtraction 
+      Other 
+      
+ **Parsing in Haskell** 
+ ____________________________________________
+ What we'll cover: 
+      How to translate our string to a Tree 
+      
+      
+ **Lambda Calculus is Important** 
+  ____________________________________________
+  First, we can thank the Church Turing Hypothesis. 
+          ________
+  --> x | function | --> x + 1 
+          ________
+ 
+ Church came up with the notion that functions are pure with no internal state. 
+ It simples takes a single input x and output x + 1. 
+ 
+ **How Does This Connect to Lambda Calculus?** 
 
 
