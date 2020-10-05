@@ -4,6 +4,7 @@
    uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php 
    Learn You a Haskell: http://learnyouahaskell.com/introduction
    Hutton: Programming in Haskell by Hutton Graham.   
+   Get Programming with Haskell by Will Kurt: https://freecontent.manning.com/learning-haskell-first-class-functions/
   
    **Haskell's Got Style** 
    ____________________________________________
@@ -17,7 +18,30 @@
     Haskell can gaurentee that function(s) has no side effects, making it easier to prove that the Haskell program 
     is correct. 
     
-    ** How do newcomers learn functinal programming?
+     **How do newcomers learn functional programming?**
+     Forget everything you know. Not completely, but your approach to functional programming will differ from imperative. 
+     Imagine driving an automatic car all your life and one day you have to drive a stick-shift car. You can't suddenly 
+     become Vin Diesel in Fast and Furious but you can start with first gear. Like every language we learn, we must understand it. 
+     For starters, here are some new concepts you should look into: 
+     I. Functions are first class objects: 
+        I'm about to blow your mind. Functions can be used as arguments. Kaboom. Indeed, quite different from C++ and Java. 
+        They can return values from other functions as well. This feature in Haskell is quite powerful. As noted by Will Kurt,  
+        "it allows you to abstract out any repetitive computation from your code, and ultimately allows you to write functions 
+        that effectively write other functions." In short, we can write one function to another function without doing any 
+        repetitive computation. 
+        A simple example of this would be the code below, 
+        Double 
+        
+        
+     II. Heavy use of recursion 
+     
+     III. New concepts  Confirmation 
+     
+     IV. More mathematical 
+     Learning discrete is important for functional programming. 
+     
+     
+    
     
    **We Love Lazy Languages**
    ____________________________________________
