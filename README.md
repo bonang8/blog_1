@@ -44,7 +44,7 @@
         ifDivisibleByTwoDouble n =  ifNumDivisibleByTwo doubleNum n
         
         As Kurt stated, we "abstract out" doubling and checking if its divisible by 2 into two seperate functions. Then 
-        using Haskell's feature, we were able to condese all these tasks into one function. As I earlier,Haskell's ability 
+        using Haskell's feature, we were able to condese all these tasks into one function. As I said earlier, Haskell's ability 
         to treat functions as values, the code is easier to debug and it's more concise. 
         
      II.  Heavy use of recursion 
