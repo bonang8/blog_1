@@ -59,11 +59,31 @@
      
      
      IV. Know Discrete 
-         Learning discrete is important for functional programming. 
-        
+         Save yourself the agonizing pain of pulling your hair out and learn discrete. My first homework assignment in Computer Languages 
+         taught me that some concepts you learn in another class may apply heavily to the other. In this case, it was Computer Languages and 
+         Discrete Mathematics. Proving basic arithetic operations by natural numbers(NN) and applying recursion in Discrete was analogous to 
+         my first assignment in Computer Languages. I realized that many underlying concepts in Functional Programming were especially 
+         grounded in Discrete Mathematics. 
+         For example, to construct an algoritm in Discrete Mathematics for NN we must be precise and make specifications: 
+         Ref: Moshier, p. 18 
+         The sum of m contained NN and n contained in NN is a natural number m + n, calculated by the following: 
+                   m + 0 = m 
+                   m + k_next = (m + k )_next    for any k. 
+         Writing a Haskell function for this is not so far off: 
+         add :: NN -> NN -> NN
+         add O n = n
+         add (S n) m = S (add n m)
+         
+         First, we specified that the function add must take in 2 argument and return 1 argument. 
+         Second, state the base case. Like the algorithm for addition in discrete (m + 0 = m), 
+         we write out our base case: add 0 n = n. 
+         Finally, we write (S n) m = S (add n m). This states that adding n and m is equivalent to 
+         the sum of the sucessors of n and m. 
+         For instance, 1 + 2 is S(S O) + S(S(S O)). This is known as peano arithmatic but we'll dive into that late in the blog (see Blog titled            Peano not Piano) We know that 1 + 2 is equal to 3. By our definition 
+         of addition in the program above, it would equal S(S(S O)). 
+         
      
-    
-    
+  
    **We Love Lazy Languages**
    ____________________________________________
     Haskell is lazy. To illustrate this concept, consider the following puesdo code below: 
