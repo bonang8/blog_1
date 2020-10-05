@@ -25,21 +25,42 @@
      For starters, here are some new concepts you should look into: 
      I. Functions are first class objects: 
         I'm about to blow your mind. Functions can be used as arguments. Kaboom. Indeed, quite different from C++ and Java. 
-        They can return values from other functions as well. This feature in Haskell is quite powerful. As noted by Will Kurt,  
-        "it allows you to abstract out any repetitive computation from your code, and ultimately allows you to write functions 
-        that effectively write other functions." In short, we can write one function to another function without doing any 
-        repetitive computation. 
-        A simple example of this would be the code below, 
-        Double 
+        They can return values from other functions as well. This feature in Haskell is quite powerful. It ultimately allows
+        us to write one function to another function without doing any repetitive computation. As Will Kurt elegantly put it, 
+        "It allows you to abstract out any repetitive computation from your code, and ultimately allows you to write functions
+        that effectively write other functions." 
+        Lets say we wanted to create a function that checks if a number is divisible by 2: 
         
+        ifNumDivisibleByTwo :: Int -> Int  
+        ifNumDivisibleByTwo thisFunction n = if n `mod` 2 == 0 then thisFunction n 
+                                    else n 
         
-     II. Heavy use of recursion 
+        We create another function that doubles a number 
+         doubleNum :: Int -> Int  
+         doubleNum n = n * 2
+        
+        We create another Function that will Double n if its divisble by 2. Here we can put Haskell's powerful feature to good use. 
+        
+        ifDivisibleByTwoDouble n =  ifNumDivisibleByTwo doubleNum n
+        
+        As Kurt stated, we "abstract out" doubling and checking if its divisible by 2 into two seperate functions. Then 
+        using Haskell's feature, we were able to condese all these tasks into one function. As I earlier,Haskell's ability 
+        to treat functions as values, the code is easier to debug and it's more concise. 
+        
+     II.  Heavy use of recursion 
+     
+     
+     
      
      III. New concepts  Confirmation 
      
-     IV. More mathematical 
-     Learning discrete is important for functional programming. 
      
+     
+     
+     
+     IV. Know Discrete 
+         Learning discrete is important for functional programming. 
+        
      
     
     
