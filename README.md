@@ -1,5 +1,8 @@
-# blog_1
-~ Introduction: Haskell in a Blog ~  
+# NO HASSLE HASKELL 
+# To read the full blog visit [No Hassle Haskell](https://csbonang.wixsite.com/website ) <br> 
+
+
+<b>Introduction: Haskell in a Blog </b>  
   References: <br>
    uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php <br> 
    Learn You a Haskell: http://learnyouahaskell.com/introduction <br>
@@ -16,7 +19,7 @@
     Given Haskell's ability to treat functions as values, the code is easier to debug and it's more concise. 
     Furthermore, it prevents side effects. Meaning, it makes it hard to analyze your program for correctness. 
     Haskell can gaurentee that function(s) has no side effects, making it easier to prove that the Haskell program 
-    is correct. 
+    is correct. <br> 
     
      **How do newcomers learn functional programming?**
      Forget everything you know. Not completely, but your approach to functional programming will differ from imperative. 
