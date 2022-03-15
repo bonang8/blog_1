@@ -1,10 +1,10 @@
 # blog_1
 ~ Introduction: Haskell in a Blog ~  
-  References: 
-   uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php 
-   Learn You a Haskell: http://learnyouahaskell.com/introduction
-   Hutton: Programming in Haskell by Hutton Graham.   
-   Get Programming with Haskell by Will Kurt: https://freecontent.manning.com/learning-haskell-first-class-functions/
+  References: <br>
+   uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php <br> 
+   Learn You a Haskell: http://learnyouahaskell.com/introduction <br>
+   Hutton: Programming in Haskell by Hutton Graham.   <br>
+   Get Programming with Haskell by Will Kurt: https://freecontent.manning.com/learning-haskell-first-class-functions/ <br> 
   
    **Haskell's Got Style** 
    ____________________________________________
