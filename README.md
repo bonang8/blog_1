@@ -3,11 +3,11 @@
 
 
 <b>Introduction: Haskell in a Blog </b>  
-  References: <br>
-   uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php <br> 
-   Learn You a Haskell: http://learnyouahaskell.com/introduction <br>
-   Hutton: Programming in Haskell by Hutton Graham.   <br>
-   Get Programming with Haskell by Will Kurt: https://freecontent.manning.com/learning-haskell-first-class-functions/ <br> 
+  <b> References:</b>  <br>
+   * uChicago.edu: http://cmsc-16100.cs.uchicago.edu/2016/Notes/arithmetic.php <br> 
+   * Learn You a Haskell: http://learnyouahaskell.com/introduction <br>
+   * Hutton: Programming in Haskell by Hutton Graham.   <br>
+   * Get Programming with Haskell by Will Kurt: https://freecontent.manning.com/learning-haskell-first-class-functions/ <br> 
   
    **Haskell's Got Style** 
    ____________________________________________
@@ -51,12 +51,12 @@
         to treat functions as values, the code is easier to debug and it's more concise. 
         
      II.  Heavy use of recursion 
-     
+     <br> 
      
      
      
      III. New concepts  Confirmation 
-     
+     <br> 
      
      
      
@@ -80,9 +80,9 @@
          First, we specified that the function add must take in 2 argument and return 1 argument. 
          Second, state the base case. Like the algorithm for addition in discrete (m + 0 = m), 
          we write out our base case: add 0 n = n. 
-         Finally, we write (S n) m = S (add n m). This states that adding n and m is equivalent to 
+         Finally, we write (S n) m = S (add n m). This states that adding n and m is equivalent to <br> 
          the sum of the sucessors of n and m. 
-         For instance, 1 + 2 is S(S O) + S(S(S O)). This is known as peano arithmatic but we'll dive into that late in the blog (see Blog titled            Peano not Piano) We know that 1 + 2 is equal to 3. By our definition 
+         For instance, 1 + 2 is S(S O) + S(S(S O)). This is known as peano arithmatic but we'll dive<br>  into that late in the blog (see Blog titled Peano not Piano) We know that 1 + 2 is equal to 3. By our definition 
          of addition in the program above, it would equal S(S(S O)). 
          
      
